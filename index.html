@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Boots Academy</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f8f9fa;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #222;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url("football.JPG");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero-content {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #e68900;
+        }
+
+        /* About Section */
+        .about {
+            padding: 60px 20px;
+            text-align: center;
+            background: white;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Training Programs */
+        .programs {
+            padding: 60px 20px;
+            background: #f1f1f1;
+            text-align: center;
+        }
+
+        .programs h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .program-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .program {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .program h3 {
+            color: #ff9800;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 60px 20px;
+            text-align: center;
+            background: white;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .program-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Fire Boots</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Master the Game of Football</h1>
+            <p>Join the top-ranked Football academy and train like a champion.</p>
+            <a href="#contact" class="cta-button">Join Now</a>
+        </div>
+    </section>
+    <!-- <img src="1289648.jpg" width="300px" height="300px" alt=""> -->
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Fire Boots is dedicated to training Football enthusiasts of all levels. Our experienced coaches, world-class facilities, and structured programs ensure you achieve your best performance.</p>
+        </div>
+    </section>
+
+    <!-- Training Programs -->
+    <section id="programs" class="programs">
+        <div class="container">
+            <h2>Our Training Programs</h2>
+            <div class="program-list">
+                <div class="program">
+                    <h3>Beginner Training</h3>
+                    <p>Perfect for new players looking to learn the fundamentals of Football.</p>
+                </div>
+                <div class="program">
+                    <h3>Advanced Coaching</h3>
+                    <p>For players aiming to compete at the state and national levels.</p>
+                </div>
+                <div class="program">
+                    <h3>Fitness & Agility</h3>
+                    <p>Improve your stamina, reflexes, and overall game performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: info@fireboots.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Sports Complex, City, Country</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Fire Boots. All rights reserved.</p>
+    </footer>
+</body>
+</html>
